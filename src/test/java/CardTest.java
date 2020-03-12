@@ -45,4 +45,11 @@ public class CardTest {
         HandCards handCards2 = new HandCards("White","3H 4H 5H 6H 7H");
         assertEquals("White wins",CardsJudge.judge(handCards1,handCards2));
     }
+
+    @Test
+    public void test7(){
+        HandCards handCards1 = new HandCards("Black","2H 2S 3H 3S 7H");
+        HandCards handCards2 = new HandCards("White","2H 2S 3H 3S 9H");
+        assertEquals("White wins",CardsJudge.judge(handCards1,handCards2));
+    }
 }
