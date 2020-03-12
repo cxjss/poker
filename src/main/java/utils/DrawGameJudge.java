@@ -186,6 +186,12 @@ public class DrawGameJudge {
         return isThreeKind(cards1,cards2);
     }
 
+    /**
+     * 散牌
+     * @param cards1
+     * @param cards2
+     * @return
+     */
     public static String isHighCard(HandCards cards1, HandCards cards2){
         for (int i = 4; i >= 0; --i) {
             if (cards1.getCards()[i].toNum() > cards2.getCards()[i].toNum()) {
